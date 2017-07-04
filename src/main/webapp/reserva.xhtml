@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:growl id="growl" showDetail="true" sticky="true" /> 
+
+            <p:panelGrid columns="1" style="width:700px">
+                <h:panelGroup>   
+                    <p:selectManyButton value="#{reservaPuestoMB.fila1}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(0)}" />
+                    </p:selectManyButton>
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila2}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(1)}" />
+                    </p:selectManyButton>    
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila3}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(2)}" />
+                    </p:selectManyButton>
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila4}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(3)}" />
+                    </p:selectManyButton>
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila5}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(4)}" />
+                    </p:selectManyButton>
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila6}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(5)}" />
+                    </p:selectManyButton>
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila7}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(6)}" />
+                    </p:selectManyButton>
+                </h:panelGroup>   
+
+                <h:panelGroup>
+                    <p:selectManyButton value="#{reservaPuestoMB.fila8}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(7)}" />
+                    </p:selectManyButton>
+
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila9}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(8)}" />
+                    </p:selectManyButton>    
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila10}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(9)}" />
+                    </p:selectManyButton>   
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila11}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(10)}" />
+                    </p:selectManyButton>
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila12}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(11)}" />
+                    </p:selectManyButton>    
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila13}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(12)}" />
+                    </p:selectManyButton>   
+
+                    <p:selectManyButton value="#{reservaPuestoMB.fila14}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(13)}" />
+                    </p:selectManyButton>  
+                </h:panelGroup>
+                <h:panelGroup>
+                    <p:selectManyButton value="#{reservaPuestoMB.fila15}">
+                        <f:selectItems value="#{reservaPuestoMB.filaAux.get(14)}" />
+                    </p:selectManyButton>    
+                </h:panelGroup>
+            </p:panelGrid>    
+            <p:commandButton process="@form" update="@form" action="#{reservaPuestoMB.registrarReserva()}"/>    
+        </h:form>     
+    </h:body>
+</html>
+
